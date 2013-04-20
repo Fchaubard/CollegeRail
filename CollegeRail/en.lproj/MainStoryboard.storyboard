@@ -84,17 +84,19 @@
                     <connections>
                         <segue destination="IY9-tq-LzR" kind="relationship" relationship="viewControllers" id="65T-ON-20i"/>
                         <segue destination="JUa-rc-1bI" kind="relationship" relationship="viewControllers" id="gLM-BT-Pzs"/>
+                        <segue destination="g3P-BA-tWE" kind="relationship" relationship="viewControllers" id="YXo-Fy-LgA"/>
+                        <segue destination="kh6-DK-lT8" kind="relationship" relationship="viewControllers" id="20b-Gb-fhE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D5A-ik-Bpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="561" y="31"/>
         </scene>
-        <!--Navigation Controller - Item 1-->
+        <!--Navigation Controller - AppTracker-->
         <scene sceneID="wIp-y1-WL2">
             <objects>
                 <navigationController id="IY9-tq-LzR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="FGD-W5-zr5"/>
+                    <tabBarItem key="tabBarItem" title="AppTracker" image="117-todo.png" id="FGD-W5-zr5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bqw-Zf-2pp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -184,11 +186,50 @@
             </objects>
             <point key="canvasLocation" x="2059" y="-317"/>
         </scene>
-        <!--Navigation Controller - Item 2-->
+        <!--View Controller - Settings-->
+        <scene sceneID="Ek1-fF-KNc">
+            <objects>
+                <viewController id="kh6-DK-lT8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pvF-bn-vV7">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="19-gear.png" id="0w7-1h-Ekl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYd-xQ-nvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="1709"/>
+        </scene>
+        <!--View Controller - Map-->
+        <scene sceneID="36n-Qp-U31">
+            <objects>
+                <viewController id="g3P-BA-tWE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QZX-H4-t0N">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="T8G-U0-1HV"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T8G-U0-1HV" firstAttribute="top" secondItem="QZX-H4-t0N" secondAttribute="top" type="default" id="38U-YN-BC8"/>
+                            <constraint firstItem="T8G-U0-1HV" firstAttribute="leading" secondItem="QZX-H4-t0N" secondAttribute="leading" type="default" id="4TR-aT-1xb"/>
+                            <constraint firstItem="T8G-U0-1HV" firstAttribute="bottom" secondItem="QZX-H4-t0N" secondAttribute="bottom" type="default" id="Gea-BO-657"/>
+                            <constraint firstItem="T8G-U0-1HV" firstAttribute="trailing" secondItem="QZX-H4-t0N" secondAttribute="trailing" type="default" id="v8a-Ij-KK9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="193-location-arrow.png" id="10T-AN-XeV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6k-PG-f9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="1037"/>
+        </scene>
+        <!--Navigation Controller - Calendar-->
         <scene sceneID="4h2-Yl-UJb">
             <objects>
                 <navigationController id="JUa-rc-1bI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="dm7-BX-fmM"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="83-calendar.png" id="dm7-BX-fmM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="j5D-sy-oMD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -279,6 +320,12 @@
             <point key="canvasLocation" x="2059" y="358"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="117-todo.png" width="18" height="19"/>
+        <image name="19-gear.png" width="26" height="26"/>
+        <image name="193-location-arrow.png" width="24" height="24"/>
+        <image name="83-calendar.png" width="23" height="25"/>
+    </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
