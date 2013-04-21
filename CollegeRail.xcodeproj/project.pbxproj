@@ -29,6 +29,9 @@
 		ABCAF95517235DFD0079B75F /* 117-todo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCAF95317235DFD0079B75F /* 117-todo@2x.png */; };
 		ABCAF95817235E6F0079B75F /* 193-location-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCAF95617235E6F0079B75F /* 193-location-arrow.png */; };
 		ABCAF95917235E6F0079B75F /* 193-location-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCAF95717235E6F0079B75F /* 193-location-arrow@2x.png */; };
+		ABCAF9641723601A0079B75F /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCAF9621723601A0079B75F /* CoreDataTableViewController.m */; };
+		ABCAF9691723608A0079B75F /* MyManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCAF9681723608A0079B75F /* MyManagedObjectContext.m */; };
+		ABCAF96C1723619A0079B75F /* AppTrackerCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCAF96B1723619A0079B75F /* AppTrackerCDTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,12 @@
 		ABCAF95317235DFD0079B75F /* 117-todo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "117-todo@2x.png"; sourceTree = "<group>"; };
 		ABCAF95617235E6F0079B75F /* 193-location-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "193-location-arrow.png"; sourceTree = "<group>"; };
 		ABCAF95717235E6F0079B75F /* 193-location-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "193-location-arrow@2x.png"; sourceTree = "<group>"; };
+		ABCAF9611723601A0079B75F /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		ABCAF9621723601A0079B75F /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		ABCAF9671723608A0079B75F /* MyManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyManagedObjectContext.h; sourceTree = "<group>"; };
+		ABCAF9681723608A0079B75F /* MyManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyManagedObjectContext.m; sourceTree = "<group>"; };
+		ABCAF96A1723619A0079B75F /* AppTrackerCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTrackerCDTVC.h; sourceTree = "<group>"; };
+		ABCAF96B1723619A0079B75F /* AppTrackerCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTrackerCDTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,8 @@
 		ABCAF923172355CC0079B75F /* CollegeRail */ = {
 			isa = PBXGroup;
 			children = (
+				ABCAF9671723608A0079B75F /* MyManagedObjectContext.h */,
+				ABCAF9681723608A0079B75F /* MyManagedObjectContext.m */,
 				ABCAF95E17235F650079B75F /* Settings */,
 				ABCAF95D17235F440079B75F /* Map */,
 				ABCAF95C17235F2A0079B75F /* Calendar */,
@@ -147,6 +158,10 @@
 		ABCAF95A17235F0B0079B75F /* AppTracker */ = {
 			isa = PBXGroup;
 			children = (
+				ABCAF9611723601A0079B75F /* CoreDataTableViewController.h */,
+				ABCAF9621723601A0079B75F /* CoreDataTableViewController.m */,
+				ABCAF96A1723619A0079B75F /* AppTrackerCDTVC.h */,
+				ABCAF96B1723619A0079B75F /* AppTrackerCDTVC.m */,
 			);
 			name = AppTracker;
 			sourceTree = "<group>";
@@ -252,6 +267,9 @@
 				ABCAF92A172355CC0079B75F /* main.m in Sources */,
 				ABCAF92E172355CC0079B75F /* AppDelegate.m in Sources */,
 				ABCAF93A172355CD0079B75F /* ViewController.m in Sources */,
+				ABCAF9641723601A0079B75F /* CoreDataTableViewController.m in Sources */,
+				ABCAF9691723608A0079B75F /* MyManagedObjectContext.m in Sources */,
+				ABCAF96C1723619A0079B75F /* AppTrackerCDTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
